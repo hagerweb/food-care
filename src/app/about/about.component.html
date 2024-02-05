@@ -1,0 +1,19 @@
+
+
+
+<div class="container">
+    <div class="row text-center">
+        <h2 class="text-center text-orange  fw-bold ">About Us </h2>
+        <div *ngFor="let oneProduct of allProducts" class="col-md-3 mt-5 ">
+
+            <img [src]="oneProduct.pImg" alt="" class="img-fluid">
+
+            <h2 class="mt-2">{{oneProduct.pTitle}}</h2>
+
+            <p >{{oneProduct.pDes}}</p>
+            <span  class="text-orange">{{oneProduct.pPrice}}</span> 
+
+        </div>
+    </div>
+    
+</div>

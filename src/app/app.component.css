@@ -1,0 +1,92 @@
+
+/* -------------------- Nav Bar ------------------------------- */
+
+
+nav{
+    transition: all 1s !important;
+}
+nav .container {
+    width: 77%;
+}
+
+nav  .navbar-nav a{
+    color: white !important;
+    font-size:16px !important ;
+    position: relative;
+}
+nav  .navbar-nav a::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0%;
+    height: 1.5px;
+    left: 7;
+    bottom: 0;
+    transition: all 0.8s;
+}
+nav  .navbar-nav a:hover::before {
+    width: 80%;
+    margin: auto;
+   
+}
+.bg-dark{
+    background-color:  var(--main-color)!important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+   
+}
+.color{
+    color: black !important;
+
+}
+.navbar-toggler{
+    transition: all 1s !important;
+}
+
+body:not(:has(:target)) .nav .active::before,
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.works:target) .works-link::before,
+body:has(.clients:target) .clients-link::before,
+body:has(.team:target) .team-link::before ,
+body:has(.contact:target) .contact-link::before
+
+
+{
+    width: 77%;
+   
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/* ------------------------ Header Section ------------------------------------ */
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.6) 0% 100%) , url('../assets/6.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 100;
+}
+header h1 span{
+    
+    font-weight: 400;
+}
+
+header .social li {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+ 
+}
+.text-orange{
+    color: rgb(232, 70, 11);
+}
+/* ------------------------------------------------------------------------- */
+
